@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Switcher</title>
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="tabs">
+
+        <div class="tabs__header">
+            <p data-tabs class="selected">Project 1</p>
+            <p data-tabs>Project 2</p>
+            <p data-tabs>Project 3</p>
+        </div>
+
+        <div class="tabs__body">
+
+            <!-- SINGLE PROJECT -->
+            <div data-content class="tabs__content selected">
+                <div class="tabs__image"><img src="https://25504338.fs1.hubspotusercontent-eu1.net/hubfs/25504338/PSI/t-fiels/solar-screenshot.png" alt=""></div>
+                <div class="tabs__textarea">
+                    <h3 class="tabs__textarea__title">Website Solar</h3>
+                    <p class="tabs__textarea__description">This site was created to practice HTML layout and styling with a live SASS compiler for CSS. The main goal was to create sections for each part of the website and make them responsive.</p>
+                </div>
+            </div>
+
+            <!-- SINGLE PROJECT -->
+            <div data-content class="tabs__content">
+                <div class="tabs__image"><img src="https://25504338.fs1.hubspotusercontent-eu1.net/hubfs/25504338/PSI/t-fiels/live-stock-crypto.png" alt=""></div>
+                <div class="tabs__textarea">
+                    <h3 class="tabs__textarea__title">Crypto price ticker</h3>
+                    <p class="tabs__textarea__description">The aim of this project was to implement websocket requests with JavaScript to display the real time price of three cryptocurrencies. the price auto-updates and the background is dynamic.</p>
+                </div>
+            </div>
+
+            <!-- SINGLE PROJECT -->
+            <div data-content class="tabs__content">
+                <div class="tabs__image"><img src="https://25504338.fs1.hubspotusercontent-eu1.net/hubfs/25504338/PSI/t-fiels/rps-react-app.png" alt=""></div>
+                <div class="tabs__textarea">
+                    <h3 class="tabs__textarea__title">React App Rock Paper Scissors</h3>
+                    <p class="tabs__textarea__description">This JavaScript project was created with the feature-rich React library. The main goal was to create and style a wireframe to display the app, keep track of states with the React useState hook and creating components to implement the game logic, while separating the configuration settings from the main codebase, updating states and use conditional rendering accordinly, allowing the user to play against the computer. The UX has been improved by making the choosing options represented by icons, and the color palette to give a high contrast between the player's white cards and the dark blue background.The first to reach 10 points wins the game.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

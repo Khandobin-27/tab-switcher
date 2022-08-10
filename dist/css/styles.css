@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  max-width: 1250px;
+  border: 1px solid darkblue;
+  padding: 4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.tabs__header {
+  width: 20%;
+  padding-right: 0.5rem;
+  border-right: 3px solid darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tabs__header p {
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.tabs__body {
+  width: 80%;
+}
+.tabs__content {
+  transition: transform 250ms ease-in-out;
+  transform: translateY(-50%);
+  opacity: 0;
+  max-height: 0;
+}
+.tabs__image {
+  max-width: 500px;
+}
+.tabs__image img {
+  width: 375px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tabs__textarea h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+.tabs__textarea p {
+  font-size: 1.1rem;
+}
+
+p.selected {
+  -webkit-text-decoration: 2px darkblue underline;
+          text-decoration: 2px darkblue underline;
+}
+
+.tabs__content.selected {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 1000px;
+  display: flex;
+  gap: 2rem;
+}/*# sourceMappingURL=styles.css.map */
